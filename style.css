@@ -1,0 +1,352 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Body style */
+  body {
+    background-color: #3d087b;
+  }
+  .container {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  /* ---- for logo and Real Time Style start ---- */
+  .row-1,
+  .row-2 {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .row-1 .col,
+  .row-2 .col {
+    width: 40%;
+    height: auto;
+  }
+  
+  /*------- logo and message style start ------*/
+  /* .row-1 .col-1 img {
+    margin: 10px;
+    
+  } */
+  
+  /* ---- Message style start ---- */
+  
+  @media screen and (max-width: 431px) {
+    .message-1 {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+  /* ---- Message style End ---- */
+  
+  /*------- logo and message style End ------*/
+  /*---- Real time style started -----*/
+  .digitalClock {
+    display: flex;
+    align-items: center;
+    row-gap: 100px;
+    margin: 5px;
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    z-index: 3;
+  }
+  
+  .timer {
+    width: 98%;
+    height: 82px;
+    /* margin-top: 18px; */
+    /* margin-left: 4px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .time {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: #3d087bde;
+    margin-top: 20px;
+  }
+  #hours {
+    width: 80px;
+    height: 82px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #3d087bde;
+    text-align: center;
+  }
+  #mins {
+    width: 80px;
+    height: 82px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #3d087bde;
+    text-align: center;
+  }
+  #secs {
+    width: 80px;
+    height: 82px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #3d087bde;
+    text-align: center;
+  }
+  .t {
+    width: 80px;
+    height: 82px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: #dd39e9;
+    background-color: #F6E2FF;
+    text-align: center;
+  }
+  .t1 {
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    background-color: #6b5ac1;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 80px;
+    height: 82px;
+  }
+  .colon {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+  .time{
+    font-weight: bolder;
+  }
+  .boxOne {
+    width: 78%;
+    height: 110px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.696);
+    opacity: 1;
+    margin-top: -90px;
+    margin-left: 13%;
+    z-index: 2;
+  }
+  .boxTwo {
+    width: 70%;
+    height: 110px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.696);
+    opacity: 0.22;
+    margin-top: -100px;
+    margin-left: 17%;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 675px) {
+    .row-1,
+    .row-2 {
+      display: block;
+    }
+    .row-1 .col,
+    .row-2 .col {
+      width: 100%;
+    }
+  }
+  
+  /*---- Real time style End -----*/
+  /* ---Row-2 style--- */
+  .row-2 .col {
+    padding: 20px;
+    margin-top: auto;
+  }
+  /* Tble of Timing */
+  .timeTable {
+    width: 100%;
+    height: 280px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #ffffff;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top: 5px;
+  }
+  .vertical {
+    width: 100px;
+    height: 20px;
+    margin: 4px 0 4px 18px;
+    border-left: 1px solid grey;
+  }
+  .wake,
+  .nap,
+  .lunch,
+  .night {
+    display: flex;
+  }
+  select {
+    width: 40%;
+    height: 28px;
+    border: 1px solid #ededed;
+    font: 12px Manrope;
+    color: #3d087bde;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 50%;
+  }
+  .text {
+    position: absolute;
+    margin-top: 6px;
+    left: 18%;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #3d087b;
+  }
+  .grab {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 8px;
+    padding: 15px;
+    font: normal normal 900 30px/40px Bauhaus Hv BT;
+    letter-spacing: 0px;
+  }
+  #greetText {
+    color: #8e53f0;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  .morning {
+    width: 100%;
+    height: auto;
+    background-color: rgba(97, 56, 136, 0.488);
+    border-radius: 10px;
+    margin-top: 18px;
+    font: normal normal 900 30px/40px Bauhaus Hv BT;
+    letter-spacing: 0px;
+  }
+  #timeText {
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+  }
+  #alarm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Alarm */
+  .alarm {
+    width: 270px;
+    height: 42px;
+    background-image: linear-gradient(
+      113deg,
+      #6e54ec 0%,
+      #cb52f8 40%,
+      #fc5eff 81%,
+      #f1a7c5 100%
+    );
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    padding-top: 1px;
+    border: none;
+  }
+  .a1 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .alarm:hover .a1 {
+    display: none;
+  }
+  .alarm:hover::before {
+    content: "Party Time !!";
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .alarm:hover {
+    background-image: linear-gradient(
+      113deg,
+      #f1a7c5 0%,
+      #fc5eff 40%,
+      #cb52f8 81%,
+      #6e54ec 100%
+    );
+  }
+  /* .message-2 {
+    width: 220px;
+    margin-top: 80px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+  } */
+  .guide {
+    width: 50%;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    background-color: rgba(97, 56, 136, 0.488);
+  }
+  @media screen and (max-width: 839px) {
+    .guide {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      height: 150px;
+    }
+  }
+  @media screen and (max-width: 507px) {
+    .guide {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      height: 150px;
+    }
+  }
+  .none {
+    color: #f06af9;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+  #timeImage {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  #changeImage {
+    width: 100%;
+  }
+  .set {
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 269px) {
+    .digitalClock {
+      width: 100%;
+    }
+  }
